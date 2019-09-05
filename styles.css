@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: url(images/bg.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  min-height: 100vh;
+  background: rgba(3, 0, 8, 0.9);
+  text-align: center;
+  padding: 1%;
+  padding-bottom: 10px;
+}
+
+#container {
+  position: relative;
+  text-align: center;
+  align-items: center;
+  min-width: 350px;
+  max-width: 620px;
+  margin: 4% auto;
+  padding-top: 1vh;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  /* min-width: 485px;
+  max-width: 620px; */
+}
+
+h2 {
+  color: #07c5e9;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#title {
+  color: #07c5e9;
+}
+
+form {
+  margin: 30px auto;
+  min-width: 350px;
+  max-width: 620px;
+}
+
+#search {
+  background: rgba(66, 66, 66, 0.63);
+  border: none;
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+input::placeholder {
+  color: rgb(197, 197, 197);
+}
+
+#weather-container {
+  color: #969696;
+  background: rgba(66, 66, 66, 0.63);
+  border-radius: 5px;
+  padding: 20px;
+  min-width: 350px;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  margin: 20px auto;
+}
+
+td {
+  width: 80px;
+  height: 30px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#weather-title {
+  transform: translateY(7px);
+  margin-bottom: 0;
+}
+#weather-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#weather-middle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#img-container {
+  width: 60px;
+  height: 60px;
+}
+img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100px;
+  height: 50px;
+}
+
+.switch-wrap {
+  cursor: pointer;
+}
+.switch-wrap input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  width: 0;
+}
+
+.switch {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 30px;
+  width: 67px;
+  transition: 0.5s;
+  background: rgba(136, 136, 136, 0.63);
+  border-radius: 15px;
+  padding: 2px 2px;
+}
+#xx {
+  width: 35px;
+  height: 26px;
+  background: rgb(23, 23, 23);
+  border-radius: 13px;
+  padding: 5px;
+  padding-left: 2px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(41, 122, 255);
+}
+#xx::after {
+  content: "°C";
+}
+
+input:checked + .switch {
+  padding-left: 30px;
+}
+
+input:checked + .switch #xx::after {
+  content: "°F";
+  color: red;
+}
+
+#error {
+  color: red;
+  transform: translateY(5px);
+}
+
+#canvas {
+  background: black;
+  width: 80%;
+
+  height: 150px;
+}
