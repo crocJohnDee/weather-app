@@ -1,7 +1,6 @@
 import { drawCanvas } from "./canvas.js"
 
-
-const link = "http://api.openweathermap.org/data/2.5/forecast?";
+const link = "https://api.openweathermap.org/data/2.5/forecast?";
 const key = "&appid=ae53c21b63f82791dcb65846a1306930";
 
 const city = document.querySelector("#city");
